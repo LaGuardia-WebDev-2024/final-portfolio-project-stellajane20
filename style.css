@@ -3,42 +3,47 @@
 body {
   padding-top: 30px;
   margin-left: 0px;
+  background-color: #5C6B4A;
+  color: #3D2B1F;
+  font-family: "Cormorant Garamond", serif;
 }
 /* ⬆⬆⬆⬆ Nav Bar Styling 
 ~~~~~ Taken From: 
 https://www.w3schools.com/css/css_navbar_horizontal.asp */
-ul {
+ul.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  background-color: #3D4A2E;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
 }
 
-li {
+ul.navbar li {
   float: left;
 }
 
-li a {
+ul.navbar li a {
   display: block;
-  color: white;
+  color: #F0ECD8;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
-  background-color: orange;
+  background-color: #8B3A3A;
 }
 
 .active {
-  background-color: red;
+  background-color: #C4A882;
 }
 
 h1 {
+  font-family: "Tangerine", cursive;
+  font-size: 90px;
   width: 100%;
-}
+}                                               

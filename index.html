@@ -1,12 +1,12 @@
 <!-- Final Project
 Requirements
-[  ] Customized HTML Page #1
-[  ] Customized HTML Page #2 
-[  ] Customized HTML Page #3
-[  ] Customized HTML Page #4
+[ yes ] Customized HTML Page #1 - Home
+[ yes ] Customized HTML Page #2  - Theater Tech
+[ yes ] Customized HTML Page #3 - Web Dev Projects
+[ yes ] Customized HTML Page #4 - Resume
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
+[ yes ] Feature 1 - Google Font
 [ no ] Feature 2 - Include jQuery
 [ no ] Feature 3 - Embed Code from Spotify/Google Docs/YouTube
 [ no ] Feature 4 - Customized HTML Page #5
@@ -19,93 +19,84 @@ Select ONE Additional Feature to Add
     <meta charset="utf-8" />
     <title>Final Portfolio Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <style>
       /* Styling Only Related To THIS Page */
-      /*~~~~~ Taken From:
-      https://www.w3schools.com/howto/howto_css_parallax.asp*/
-      .parallax {
-        /* The image used */
-        background-image: url("CS_Ed_Week_2025.jpg");
+      .hero {
+      background-color: #F0ECD8;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero img {
+      width: 350px;
+      margin: 20px;
+      border: 8px solid #C4A882;
+    }
 
-        /* Set a specific height */
-        min-height: 500px;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .textblock {
-        min-height: 500px;
-        background-color: black;
-        color: white;
-      }
-      .parent-flex {
+    .hero p {
+      color: #3D2B1F;
+      padding: 20px;
+      flex: 1;
+    }
+      .polaroid-section {
         display: flex;
+        justify-content: space-around; 
+        padding: 40px;
+        flex-wrap: wrap;
       }
-      .child-flex {
-        background-color: green;
-        margin: 30px;
+      .polaroid {
+        background-color: #F0ECD8;
         padding: 10px;
-        text-align: justify;
+        padding-bottom: 30px;
+        width: 250px;
+        margin: 20px;
       }
-      .para-1{
-        display: flex;
-        align-items: center;
+      .polaroid img {
+      width: 250px;
       }
+
+      .polaroid p {
+        text-align: center;
+        color: #3D2B1F;
+        padding-top: 10px;
+      }
+
+
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul>
+    <ul class="navbar">
       <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
+      <li><a href="shows.html">Theater Tech</a></li>
+      <li><a href="webdev.html">Web Dev Projects</a></li>
       <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2025-2026</h1>
-    <div class="parallax"></div>
-
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
+    <h1 style="padding-left: 20px;">Stella Wexler Rush</h1>
+    <div class="hero">
+      <img src="images/personal1.jpg" />
+      <p>Stella Wexler Rush is an experienced technical theater professional with expertise in props, paints, hair, and makeup. She is majoring in technical theater at Fiorello LaGuardia High School of Music & Art and the Performing Arts in New York City. In addition to LaGuardia productions, she worked as Assistant Director for a community theater production in the summer of 2025. She will be graduating in June 2026 and will be attending Oberlin College, where she plans to major in Cinema & Media Studies and Psychology.  </p>
+    </div>
+    <div class="polaroid-section">
+      <div class="polaroid">
+        <img src="images/concert.jpg">
+        <p>I enjoy going to concerts, and have seen performers including Mitski, Chappell Roan,  Boygenius, and many others.</p>
+        </div>
+       <div class="polaroid">  
+        <img src="images/travel.jpg">
+        <p>I love to travel and have visited 12 countries and 20 U.S. states.</p>
+        </div>
+      <div class="polaroid">
+        <img src="images/turtle.jpg">
+        <p>I have a pet turtle named Sandy who is 22 years old.</p>
       </div>
     </div>
+
   </body>
 </html>

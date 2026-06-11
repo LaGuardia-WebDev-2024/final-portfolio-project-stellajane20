@@ -1,36 +1,144 @@
+<!-- Final Project
+Requirements
+[ yes ] Customized HTML Page #1 - Home
+[ yes ] Customized HTML Page #2 - Theater Tech
+[ yes ] Customized HTML Page #3 - Web Dev Projects
+[ yes ] Customized HTML Page #4 - Resume
+
+Select ONE Additional Feature to Add  
+[ yes ] Feature 1 - Google Font
+[ no ] Feature 2 - Include jQuery
+[ no ] Feature 3 - Embed Code from Spotify/Google Docs/YouTube
+[ no ] Feature 4 - Customized HTML Page #5
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <title>Final Project - Resume</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <style>
+.resume-hero {
+  width:100%;
+  text-align:left;
+  padding:20px;
+}
+.resume-hero img {
+  width: 50%;
+}
+.resume-block {
+  background-color: #F0ECD8;
+  color: #3D2B1F;
+  padding: 40px;
+  margin: 20px;
+}
+.resume-block h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+.resume-block li {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.resume-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.resume-block h3 {
+  font-family:"Cormorant Garamond", serif;
+  font-size: 22px;
+  color: #8B3A3A;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.resume-block .school-name {
+  font-weight: bold;
+  font-size: 20px;
+  list-style-type: none;
+  margin-left: -20px;
+  margin-top:15px;
+}
+
       /* Styling Only Related To THIS Page */
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul>
+    <ul class="navbar">
       <li><a href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
+      <li><a href="shows.html">Theater Tech</a></li>
+      <li><a href="webdev.html">Web Dev Projects</a></li>
       <li><a class="active" href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>Resume</h1>
+<div class="resume-hero">
+  <img src="images/resume_hero.jpg" />
+  </div>
+  <div class="resume-block">
+    <h2>Stella Wexler Rush</h2>
+
+    <h3>Theater Experience</h3>
+    <ul>
+      <li><strong>"Macbeth,"</strong> Hair and Makeup Supervisor, LaGuardia High School (New York, NY) Dir: Jeff Stafford, Spring 2026</li>
+      <li><strong>"Noises Off,"</strong> Scenic Charge, LaGuardia High School (New York, NY) Dir: Lee Lobenhofer, Spring 2026</li>
+      <li><strong>"Urinetown,"</strong> Hair and Makeup Crew, LaGuardia High School (New York, NY) Dir: Jonathan L. Davidson, Spring 2026</li>
+      <li><strong>"Of Thee I Sing,"</strong> Stage Manager, LaGuardia High School (New York, NY) Dir: Sarah Parker, Spring 2026</li>
+      <li><strong>"West Side Story,"</strong> Hair and Makeup Co-Supervisor and Props Build Crew, LaGuardia High School (New York, NY) Dir: Mala M. Tsantilas, Winter 2025</li>
+      <li><strong>"Something Rotten,"</strong> Assistant Director, Piper Theater (Brooklyn, NY) Dir: Meredith Hackett, Summer 2025</li>
+      <li><strong>"The Seagull,"</strong> Props Head, LaGuardia High School (New York, NY) Dir: Mala M. Tsantilas, Spring 2025</li>
+      <li><strong>"Little Shop of Horrors,"</strong> Hair and Makeup Assistant Supervisor, Puppet Build Crew, Props Build Crew, LaGuardia High School (New York, NY) Dir: Laura Fries, Spring 2025</li>
+      <li><strong>"La Belle Hélène,"</strong> Makeup Supervisor, LaGuardia High School (New York, NY) Dir: Jeanne Cascio, Spring 2025</li>
+      <li><strong>"Into the Woods,"</strong> Hair and Makeup Crew, LaGuardia High School (New York, NY) Dir: Michael Herwitz, Winter 2024</li>
+      <li><strong>"The Gondoliers,"</strong> Hair and Makeup Crew, LaGuardia High School (New York, NY) Dir: Mary Ann Swerdfeger, Spring 2024</li>
+    </ul>
+
+    <h3>Volunteer Experience</h3>
+    <ul>
+      <li><strong>Club du Vieux Manoir</strong>, Historic Restoration Volunteer, Château Fort de Guise (Guise, France), Aug. 2025</li>
+      <li><strong>Progressive Turnout Project</strong>, Grassroots Outreach Volunteer (Brooklyn, NY), Aug.–Nov. 2024</li>
+      <li><strong>Center for Architecture Foundation</strong>, Architecture Camp Assistant (New York, NY), Aug. 2024</li>
+      <li><strong>Little Shop of Kindness</strong>, Repair the World Volunteer (New York, NY), July 2023</li>
+      <li><strong>St. John's Bread and Life</strong>, Repair the World Volunteer (Brooklyn, NY), July 2022</li>
+      <li><strong>Little Essentials</strong>, Repair the World Volunteer (Brooklyn, NY), July 2022</li>
+    </ul>
+
+    <h3>Technical Theater Skills</h3>
+    <ul>
+    <li>Props Design</li>
+    <li>Hair & Makeup</li>
+    <li>Drawing & Painting</li>
+    <li>Set Design & Construction</li>
+    <li>Sewing</li>
+    </ul>
+
+    <h3>Computer Skills</h3>
+    <ul>
+      <li>CapCut Film & Video Editing</li>
+      <li>Canva</li>
+      <li>Google Suite</li>
+      <li>Microsoft Suite</li>
+      <li>Web Development</li>
+    </ul>
+
+    <h3>Education</h3>
+    <ul>
+      <li class="school-name">Fiorello H. LaGuardia High School of Music, Art, and Performing Arts (New York, NY)</li>
+      <li>Major: Technical Theater</li>
+      <li>Expected to Graduate: June 2026</li>
+    </ul>
+  
+    <ul>
+      <li class="school-name">Oberlin College (Oberlin, OH)</li>
+      <li>Intended Major: Cinema & Media Studies with Psychology Minor</li>
+      <li>Expected To Graduate: May 2030</li>
+    </ul>
+    </div>
   </body>
 </html>

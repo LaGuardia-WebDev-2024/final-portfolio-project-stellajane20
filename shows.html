@@ -1,0 +1,311 @@
+<!-- Final Project
+Requirements
+[ yes ] Customized HTML Page #1 - Home
+[ yes ] Customized HTML Page #2 - Theater Tech
+[ yes ] Customized HTML Page #3 - Web Dev Projects
+[ yes ] Customized HTML Page #4 - Resume
+
+Select ONE Additional Feature to Add  
+[ yes ] Feature 1 - Google Font
+[ yes ] Feature 2 - Include jQuery
+[ no ] Feature 3 - Embed Code from Spotify/Google Docs/YouTube
+[ no ] Feature 4 - Customized HTML Page #5
+-->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project - Theater Tech</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .show-title {
+        background-color: #3D2B1F;
+        color: #F0ECD8;
+        padding: 10px 20px;
+        margin-top: 30px;
+      }
+      .show-title h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 28px;
+      }
+      .show-row {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: #f0ecd8;
+      }
+        .show-row img {
+          width: 22%;
+          height: auto;
+          margin: 5px;
+        }
+        .show-row-extra {
+          display: block;
+          background-color: #F0ECD8;
+        }
+        .show-row-extra img {
+          width: 22%;
+          height: auto;
+          margin: 5px;
+        }
+        .show-more-btn {
+          background-color: #8B3A3A;
+          color: #F0ECD8;
+          border: none;
+          padding: 8px 20px;
+          margin: 5px 0px 20px 0px; 
+          font-family: "Cormorant Garamond", serif;
+          font-size: 18px;
+        }
+      /* Styling Only Related To THIS Page */
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="shows.html">Theater Tech</a></li>
+      <li><a href="webdev.html">Web Dev Projects</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1>Theater Tech</h1>
+     <!-- MACBETH -->
+      <div class="show-title">
+        <h2> Macbeth: Hair and Makeup Supervisor, Spring 2026</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/m1.jpg" />
+        <img src="images/shows/m2.jpg" />
+        <img src="images/shows/m3.jpg" />
+        <img src="images/shows/m4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/m5.jpg" />
+          <img src="images/shows/m6.jpg" />
+          <img src="images/shows/m7.jpg" />
+          <img src="images/shows/m8.jpg" />
+          </div>
+          <div class="show-row">
+          <img src="images/shows/m9.jpg" />
+          <img src="images/shows/m10.jpg" />
+          <img src="images/shows/m11.jpg" />
+          <img src="images/shows/m12.jpg" />
+          </div>
+        </div>
+          <button class="show-more-btn">Show More</button>
+
+     <!-- NOISES OFF -->
+      <div class="show-title">
+        <h2> Noises Off: Scenic Charge, Spring 2026</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/no1.jpg" />
+        <img src="images/shows/no2.jpg" />
+        <img src="images/shows/no3.jpg" />
+        <img src="images/shows/no4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/no5.jpg" />
+          <img src="images/shows/no6.jpg" />
+          <img src="images/shows/no7.jpg" />
+          <img src="images/shows/no8.jpg" />
+          </div>
+        </div>
+          <button class="show-more-btn">Show More</button>
+        
+     <!-- URINETOWN -->
+      <div class="show-title">
+        <h2> Urinetown: Hair and Makeup Crew, Spring 2026</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/u1.jpg" />
+        <img src="images/shows/u2.jpg" />
+        <img src="images/shows/u3.jpg" />
+        <img src="images/shows/u4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/u5.jpg" />
+          <img src="images/shows/u6.jpg" />
+          <img src="images/shows/u7.jpg" />
+          <img src="images/shows/u8.jpg" />
+          </div>
+        </div>
+          <button class="show-more-btn">Show More</button>
+
+     <!-- Of Thee I Sing -->
+      <div class="show-title">
+        <h2> Of Thee I Sing: Stage Manager, Spring 2026</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/otis1.jpg" />
+        <img src="images/shows/otis2.jpg" />
+        <img src="images/shows/otis3.jpg" />
+        <img src="images/shows/otis4.jpg" />
+        </div>
+
+     <!-- WEST SIDE STORY -->
+      <div class="show-title">
+        <h2> West Side Story: Hair and Makeup Co-Supervisor and Props Build Crew, Winter 2025</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/wss1.jpg" />
+        <img src="images/shows/wss2.jpg" />
+        <img src="images/shows/wss3.jpg" />
+        <img src="images/shows/wss4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/wss5.jpg" />
+          <img src="images/shows/wss6.jpg" />
+          <img src="images/shows/wss7.jpg" />
+          <img src="images/shows/wss8.jpg" />
+          </div>
+         <div class="show-row">
+          <img src="images/shows/wss9.jpg" />
+          <img src="images/shows/wss10.jpg" />
+          <img src="images/shows/wss11.jpg" />
+          <img src="images/shows/wss12.jpg" />
+          </div>
+        <div class="show-row">
+          <img src="images/shows/wss13.jpg" />
+          <img src="images/shows/wss14.jpg" />
+          <img src="images/shows/wss15.jpg" />
+          <img src="images/shows/wss16.jpg" />
+          </div>
+          </div>
+          <button class="show-more-btn">Show More</button>
+
+     <!-- SOMETHING ROTTEN -->
+      <div class="show-title">
+        <h2> Something Rotten: Assistant Director, Summer 2025</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/sr1.jpg" />
+        <img src="images/shows/sr2.jpg" />
+        <img src="images/shows/sr3.jpg" />
+        <img src="images/shows/sr4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/sr5.jpg" />
+          <img src="images/shows/sr6.jpg" />
+          <img src="images/shows/sr7.jpg" />
+          <img src="images/shows/sr8.jpg" />
+          </div>
+        </div>
+          <button class="show-more-btn">Show More</button>
+
+     <!-- THE SEAGULL -->
+      <div class="show-title">
+        <h2> The Seagull: Props Head, Spring 2025</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/s1.jpg" />
+        <img src="images/shows/s2.jpg" />
+        <img src="images/shows/s3.jpg" />
+        <img src="images/shows/s4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/s5.jpg" />
+          <img src="images/shows/s6.jpg" />
+          <img src="images/shows/s7.jpg" />
+          <img src="images/shows/s8.jpg" />
+          </div>
+        </div>
+          <button class="show-more-btn">Show More</button>
+
+     <!-- LITTLE SHOP OF HORRORS -->
+      <div class="show-title">
+        <h2> Little Shop of Horrors: Hair and Makeup Assistant Supervisor and Puppet Crew, Spring 2025</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/ls1.jpg" />
+        <img src="images/shows/ls2.jpg" />
+        <img src="images/shows/ls3.jpg" />
+        <img src="images/shows/ls4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/ls5.jpg" />
+          <img src="images/shows/ls6.jpg" />
+          <img src="images/shows/ls7.jpg" />
+          <img src="images/shows/ls8.jpg" />
+          </div>
+          <div class="show-row">
+            <img src="images/shows/ls9.jpg" />
+            <img src="images/shows/ls10.jpg" />
+            <img src="images/shows/ls11.jpg" />
+            <img src="images/shows/ls12.jpg" />
+            </div>
+            </div>
+      <button class="show-more-btn">Show More</button>
+
+     <!-- LA BELLE HELENE -->
+      <div class="show-title">
+        <h2> La Belle Hélène: Makeup Supervisor, Spring 2025</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/lbh1.jpg" />
+        <img src="images/shows/lbh2.jpg" />
+        <img src="images/shows/lbh3.jpg" />
+        </div>
+
+     <!-- INTO THE WOODS -->
+      <div class="show-title">
+        <h2> Into the Woods: Hair and Makeup Crew, Winter 2024</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/woods1.jpg" />
+        <img src="images/shows/woods2.jpg" />
+        <img src="images/shows/woods3.jpg" />
+        <img src="images/shows/woods4.jpg" />
+        </div>
+        <div class="show-row-extra" style="display:none;">
+          <div class="show-row">
+          <img src="images/shows/woods5.jpg" />
+          <img src="images/shows/woods6.jpg" />
+          <img src="images/shows/woods7.jpg" />
+          <img src="images/shows/woods8.jpg" />
+          </div>
+          <div class="show-row">
+          <img src="images/shows/woods9.jpg" />
+          <img src="images/shows/woods10.jpg" />
+          <img src="images/shows/woods11.jpg" />
+          <img src="images/shows/woods12.jpg" />
+          </div>
+        </div>
+          <button class="show-more-btn">Show More</button>
+
+     <!-- THE GONDOLIERS -->
+      <div class="show-title">
+        <h2> The Gondoliers: Hair and Makeup Crew, Spring 2024</h2>
+        </div>
+        <div class="show-row">
+        <img src="images/shows/g1.jpg" />
+        <img src="images/shows/g2.jpg" />
+        </div>
+
+  <script>
+      $(".show-more-btn").click(function() {
+        $(this).prev(".show-row-extra").toggle();
+        if ($(this).text() == "Show More") {
+          $(this).text("Show Less");
+        } else {
+          $(this).text("Show More");
+        }
+      });
+    </script>
+     </body>
+</html>
